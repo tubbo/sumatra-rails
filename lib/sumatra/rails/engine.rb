@@ -1,5 +1,7 @@
 module Sumatra
-  class Engine < ::Rails::Engine
-    isolate_namespace Sumatra
+  module Rails
+    class Engine < ::Rails::Engine
+      isolate_namespace Sumatra::Rails
+    end
   end
 end
