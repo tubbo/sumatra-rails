@@ -1,4 +1,1 @@
-Rails.application.routes.draw do
-
-  mount Sumatra::Engine => "/sumatra"
-end
+Rails.application.routes.draw do; end

@@ -1,2 +1,2 @@
-Sumatra::Engine.routes.draw do
+Sumatra::Rails::Engine.routes.draw do
 end
