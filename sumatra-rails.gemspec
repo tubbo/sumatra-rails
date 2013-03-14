@@ -5,7 +5,7 @@ require "sumatra/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "sumatra"
+  s.name        = "sumatra-rails"
   s.version     = Sumatra::VERSION
   s.authors     = ["Tom Scott"]
   s.email       = ["tubbo@psychedeli.ca"]
@@ -19,8 +19,4 @@ Gem::Specification.new do |s|
   s.add_dependency "rails", "~> 3.2.12"
   s.add_dependency "jquery-rails"
   s.add_dependency "coffee-rails"
-  s.add_dependency "underscore-rails"
-
-  s.add_development_dependency "rspec"
-  s.add_development_dependency "jasmine"
 end
