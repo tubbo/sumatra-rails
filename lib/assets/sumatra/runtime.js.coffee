@@ -1,7 +1,7 @@
 # Define a Sumatra plugin as a jQuery plugin.
 #
 # Example:
-#     @sumatra 'myPlugin', ->
+#     sumatra 'myPlugin', ->
 #       class MyPlugin extends SumatraPlugin
 #         initialize:
 #           delete @action

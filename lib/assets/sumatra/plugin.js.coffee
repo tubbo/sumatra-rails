@@ -1,6 +1,4 @@
-#= require jquery
-#= require underscore
-
+# The prototype for all jQuery plugins created with the Sumatra framework.
 class @SumatraPlugin
   action: 'one'
   defaults: {}
@@ -18,7 +16,9 @@ class @SumatraPlugin
   # Merge `options` hash with the `defaults` as set in the definition
   # of this object. The SumatraPlugin is 
   mergeOptions: ->
-    @options = _.extend @defaults, @options
+    mergedOptions = @defaults
+    $.extend mergedOptions, @options
+    @options = mergedOptions
 
   # Run custom constructor code, but blocks instantiation if this method
   # returns `false`. This method was pretty much designed to be overridden.
