@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Sumatra is a CoffeeScript framework for writing beautiful jQuery plugins."
   s.description = "Sumatra is a CoffeeScript framework for writing beautiful jQuery plugins."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["LICENSE.md", "Rakefile", "README.md"]
+  s.files = `git ls-files`.split("\n")
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.12"
