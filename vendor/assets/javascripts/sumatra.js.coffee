@@ -1,3 +1,6 @@
+#= require jquery
+#= require underscore
+
 # The prototype for all jQuery plugins created with the Sumatra framework.
 class @SumatraPlugin
   action: 'one'
