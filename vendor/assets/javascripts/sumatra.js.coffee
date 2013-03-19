@@ -1,1 +1,1 @@
-#= require_tree sumatra/pkg
+#= require_tree ./sumatra/pkg

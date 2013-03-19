@@ -1,5 +1,5 @@
 module Sumatra
   module Rails
-    VERSION = "0.0.4"
+    VERSION = "0.0.4.1"
   end
 end
