@@ -58,8 +58,11 @@ class @SumatraPlugin
 
   # Merge `options` hash with the `defaults` as set in the definition
   # of this object.
-  mergeDefaultsWith: (options) ->
-    _.extend @defaults, @options
+  mergeDefaultsWith: (passed_in_options) ->
+    if @defaults instanceof Function
+      _.extend @defaults.call(), passed_in_options
+    else
+      _.extend @defaults, passed_in_options
 
   # Run custom constructor code, but blocks instantiation if this method
   # returns `false`. This method was pretty much designed to be overridden.
