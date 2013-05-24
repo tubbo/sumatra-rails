@@ -53,6 +53,7 @@ class @SumatraPlugin
     @element = $(current_element)
     @index = index_of_query
     @options = @mergeDefaultsWith init_options
+    @element.data 'serviceObject', this
     @initialize() and @bindEvents()
 
   # Merge `options` hash with the `defaults` as set in the definition
